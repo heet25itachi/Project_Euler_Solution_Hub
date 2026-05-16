@@ -1,10 +1,9 @@
 limit = 4000000
 total_sum = 0
-a, b = 1, 2  # starting values specified in the problem 
+e1, e2 = 2, 8  # First two even terms 
 
-while a <= limit:
-  if a % 2 == 0:
-    total_sum += a
-  a, b = b, a + b
+while e1 <= limit:
+    total_sum += e1
+    e1, e2 = e2, 4 * e2 + e1
 
 print(total_sum)   #Output: 4613732
